@@ -6,7 +6,7 @@
 /*   By: elwilks <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/22 12:03:20 by elwilks           #+#    #+#             */
-/*   Updated: 2025/11/22 12:04:51 by elwilks          ###   ########.fr       */
+/*   Updated: 2025/12/02 15:10 b6 elwilks          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,7 @@ char	*ft_read_file(int fd, char *s)
 	buffer = ft_calloc(BUFFER_SIZE + 1, 1);
 	if (buffer == NULL)
 		return (NULL);
+
 	bytes = 1;
 	while (bytes > 0 && ft_detect_new_line(s) == 0)
 	{
@@ -111,7 +112,7 @@ char	*get_next_line(int fd)
 		return (NULL);
 	return (line);
 }
-/*
+
 int	main(void)
 {
 	int		fd;
@@ -128,6 +129,7 @@ int	main(void)
 	x = ft_strlen(line);
 	printf("%d\n", x);
 	close(fd);
-	return (0);
+	return (0)
+	;
 }
-*/
+
